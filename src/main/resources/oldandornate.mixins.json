@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.telvarost.oldandornate.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BowItemMixin"
+  ],
+  "server": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

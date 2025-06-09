@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "oldandornate",
+  "version": "${version}",
+
+  "name": "OldAndOrnate",
+  "description": "Adds in a few small old features and other random ornate add-ons.",
+  "authors": [
+    "Telvarost"
+  ],
+  "contact": {
+    "issues": "https://github.com/telvarost/OldAndOrnate-StationAPI/issues",
+    "homepage": "https://github.com/telvarost/OldAndOrnate-StationAPI/",
+    "sources": "https://github.com/telvarost/OldAndOrnate-StationAPI/"
+  },
+
+  "license": "MIT",
+  "icon": "assets/oldandornate/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+      "com.github.telvarost.oldandornate.events.init.RecipeListener"
+    ],
+    "stationapi:event_bus_client": [
+    ],
+    "stationapi:event_bus_server": [
+    ],
+    "gcapi3": [
+      "com.github.telvarost.oldandornate.Config"
+    ]
+  },
+  "mixins": [
+    "oldandornate.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "gcapi3": ">=3.0.1"
+  },
+
+  "recommends": {
+    "stationapi": "*",
+    "modmenu": "*"
+  }
+}
