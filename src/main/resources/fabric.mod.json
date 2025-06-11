@@ -38,7 +38,8 @@
     ],
     "gcapi3:factory_provider": [
       "com.github.telvarost.oldandornate.AdobeBrickRecipeEnumFactory",
-      "com.github.telvarost.oldandornate.AdobeRecipeEnumFactory"
+      "com.github.telvarost.oldandornate.AdobeRecipeEnumFactory",
+      "com.github.telvarost.oldandornate.StarFlowerGenerationEnumFactory"
     ]
   },
   "mixins": [

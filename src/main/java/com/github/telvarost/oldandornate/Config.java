@@ -63,5 +63,12 @@ public class Config {
                 multiplayerSynced = true
         )
         public Boolean enableStarFlowerDyeRecipe = true;
+
+        @ConfigEntry(
+                name = "Star Flower Terrain Generation",
+                description = "Which biomes allow star flowers to generate",
+                multiplayerSynced = true
+        )
+        public StarFlowerGenerationEnum starFlowerTerrainGeneration = StarFlowerGenerationEnum.SPECIFIC_BIOMES;
     }
 }

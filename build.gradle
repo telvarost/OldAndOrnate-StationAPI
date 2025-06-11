@@ -116,6 +116,10 @@ dependencies {
 	modImplementation("net.danygames2014:spawneggs:${project.spawneggs_version}") {
 		transitive false
 	}
+
+	modRuntimeOnly ("maven.modrinth:clientsideessentials-stationapi:${project.clientsideessentials_version}") {
+		transitive false
+	}
 }
 
 processResources {
