@@ -20,14 +20,25 @@
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
+      "com.github.telvarost.oldandornate.ModHelper",
+      "com.github.telvarost.oldandornate.events.init.BlockListener",
+      "com.github.telvarost.oldandornate.events.init.ItemListener",
       "com.github.telvarost.oldandornate.events.init.RecipeListener"
     ],
     "stationapi:event_bus_client": [
+      "com.github.telvarost.oldandornate.events.client.TextureListener"
     ],
     "stationapi:event_bus_server": [
     ],
+    "bhcreative:event_bus": [
+      "com.github.telvarost.oldandornate.events.init.CreativeListener"
+    ],
     "gcapi3": [
       "com.github.telvarost.oldandornate.Config"
+    ],
+    "gcapi3:factory_provider": [
+      "com.github.telvarost.oldandornate.AdobeBrickRecipeEnumFactory",
+      "com.github.telvarost.oldandornate.AdobeRecipeEnumFactory"
     ]
   },
   "mixins": [
