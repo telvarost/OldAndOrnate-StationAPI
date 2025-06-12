@@ -42,6 +42,13 @@ public class Config {
         public Boolean enableAdobeBricksRecipe = true;
 
         @ConfigEntry(
+                name = "Enable Adobe Terrain Generation",
+                description = "Generates adobe lakebeds in savannas",
+                multiplayerSynced = true
+        )
+        public Boolean enableAdobeTerrainGeneration = true;
+
+        @ConfigEntry(
                 name = "Use Tweaked Adobe Mining Speeds",
                 description = "Adobe mines slower, adobe bricks mine faster",
                 multiplayerSynced = true

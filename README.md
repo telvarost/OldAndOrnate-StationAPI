@@ -26,6 +26,8 @@ Mod now works on Multiplayer with GlassConfigAPI version 3.0+ used to sync confi
     * 2 crafting recipe choices (default crafting recipe enabled):
       * Disable the crafting recipe
       * Craft 4 Adobe Brick in a square
+  * Special config to generate adobe lakebeds in savanna biomes (default enabled)
+    * Also, lowers normal lake spawn chance in savannas (effectively swapping some water lakes for dry adobe lakebeds)
   * Special config that tweaks adobe/adobe bricks mining speed (default enabled)
     * Makes Adobe mine slower than dirt (and slower than the old mod)
     * Makes Adobe Bricks mine faster than stone (and faster than the old mod)
