@@ -5,39 +5,41 @@ A StationAPI mod for Minecraft Beta 1.7.3 that adds in a few small old features 
 # Old and Ornate
 Mod now works on Multiplayer with GlassConfigAPI version 3.0+ used to sync configs!
 
-### Features
-* Adds adobe blocks and recipes (ported from mod archive)
-  * Adobe (dirt/soil)
-    * Special soil type that allows most plants to be planted on it, but doesn't allow them to grow
-    * 4 crafting recipe choices (defaults to using new recipe):
-      * Disable the crafting recipe
-      * Old: Craft 1 Dirt -> Get 1 Adobe
-      * New: Craft 1 Dirt and 1 Sand -> Get 2 Adobe
-      * Realism: Craft 1 Dirt, 1 Sand, 1 Wheat, and 1 Water Bucket -> Get 4 Adobe
-        * Water bucket is not consumed on craft
-  * Adobe Brick
-    * Item used to craft adobe bricks
-    * 3 crafting recipe choices (defaults to using new recipe):
-      * Disable the crafting recipe
-      * Old: Craft 4 Adobe in a square
-      * New: Smelt 1 Adobe
-  * Adobe Bricks
-    * Weaker brick block
-    * 2 crafting recipe choices (default crafting recipe enabled):
-      * Disable the crafting recipe
-      * Craft 4 Adobe Brick in a square
-  * Special config to generate adobe lakebeds in savanna biomes (default enabled)
-    * Also, lowers normal lake spawn chance in savannas (effectively swapping some water lakes for dry adobe lakebeds)
-  * Special config that tweaks adobe/adobe bricks mining speed (default enabled)
-    * Makes Adobe mine slower than dirt (and slower than the old mod)
-    * Makes Adobe Bricks mine faster than stone (and faster than the old mod)
-* Adds star flower block and terrain generation (ported from mod archive)
-  * Star Flower
-    * Flower that glows faintly
-    * Craft 1 glowstone dust with 1 dandelion to get 1 star flower (recipe enabled by default)
-    * Craft 1 star flower to get 2 lime dye (recipe enabled by default)
-    * Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
-      * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
+### Adobe Features
+Adds adobe blocks, recipes, and terrain generation (ported from mod archive and enhanced with configs)
+* Adobe (dirt/soil)
+  * Special soil type that allows most plants to be planted on it, but doesn't allow them to grow
+  * 4 crafting recipe choices (defaults to using new recipe):
+    * Disable the crafting recipe
+    * Old: Craft 1 Dirt -> Get 1 Adobe
+    * New: Craft 1 Dirt and 1 Sand -> Get 2 Adobe
+    * Realism: Craft 1 Dirt, 1 Sand, 1 Wheat, and 1 Water Bucket -> Get 4 Adobe
+      * Water bucket is not consumed on craft
+* Adobe Brick
+  * Item used to craft adobe bricks
+  * 3 crafting recipe choices (defaults to using new recipe):
+    * Disable the crafting recipe
+    * Old: Craft 4 Adobe in a square
+    * New: Smelt 1 Adobe
+* Adobe Bricks
+  * Weaker brick block
+  * 2 crafting recipe choices (default crafting recipe enabled):
+    * Disable the crafting recipe
+    * Craft 4 Adobe Brick in a square
+* Special config to generate adobe lakebeds in savanna biomes (default enabled)
+  * Also, lowers normal lake spawn chance in savannas (effectively swapping some water lakes for dry adobe lakebeds)
+* Special config that tweaks adobe/adobe bricks mining speed (default enabled)
+  * Makes Adobe mine slower than dirt (and slower than the old mod)
+  * Makes Adobe Bricks mine faster than stone (and faster than the old mod)
+
+### Star Flower Features
+Adds star flower block, recipes, and terrain generation (ported from mod archive and enhanced with configs)
+* Star Flower
+  * Flower that glows faintly
+  * Craft 1 glowstone dust with 1 dandelion to get 1 star flower (recipe enabled by default)
+  * Craft 1 star flower to get 2 lime dye (recipe enabled by default)
+  * Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
+    * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
 
 ## Installation using Prism Launcher
 
