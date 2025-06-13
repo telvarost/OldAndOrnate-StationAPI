@@ -19,6 +19,13 @@ public class Config {
                 description = "Restart required for changes to take effect"
         )
         public StarFlowerConfig STAR_FLOWER_CONFIG = new StarFlowerConfig();
+
+        @ConfigEntry(
+                name = "Enable Furnace Minecart Music",
+                description = "Makes it play a song when it is used",
+                multiplayerSynced = true
+        )
+        public Boolean enableFurnaceMinecartMusic = true;
     }
 
     public static class AdobeConfig {
