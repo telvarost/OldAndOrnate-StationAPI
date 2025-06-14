@@ -50,6 +50,7 @@ Adds some other small new add-ons!
 * Lapis Lazuli Sword
   * A weak sword made from a deep blue rock locked in time under the earth
     * On hit chills enemies for 1 second (potentially freezing them for 0.75 seconds)
+      * Unsheared sheep are immune to the chilling/freezing effect because of their thick wool coats
     * Has 64 durability, half the attack of a wooden/gold sword, and the mining speed of a wooden sword
   * Craft 2 lapis lazuli and 1 stick using the normal sword crafting shape (recipe enabled by default)
 
