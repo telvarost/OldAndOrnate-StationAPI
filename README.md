@@ -47,6 +47,11 @@ Adds some other small new add-ons!
   * The furnace minecart will now play a song when charcoal is used to power it (default enabled)
   * The song will not play if a jukebox is playing a disc
   * The song will end if any nearby furnace minecart is destroyed
+* Lapis Lazuli Sword
+  * A weak sword made from a rock locked in time under the earth
+    * On hit chills enemies for 1 second (potentially freezing them for 0.75 seconds)
+    * Has 64 durability, 1 attack (same as an empty hand), and the mining speed of a wooden sword
+  * Craft 2 lapis lazuli and 1 stick using normal sword crafting shape (recipe enabled by default)
 
 ## Installation using Prism Launcher
 

@@ -91,5 +91,12 @@ public class Config {
                 multiplayerSynced = true
         )
         public Boolean enableFurnaceMinecartMusic = true;
+
+        @ConfigEntry(
+                name = "Enable Lapis Lazuli Sword Recipe",
+                description = "Restart required for changes to take effect",
+                multiplayerSynced = true
+        )
+        public Boolean enableLapisLazuliSwordRecipe = true;
     }
 }

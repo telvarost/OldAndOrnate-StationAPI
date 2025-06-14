@@ -14,6 +14,7 @@ import net.modificationstation.stationapi.api.util.Identifier;
 
 import static com.github.telvarost.oldandornate.events.init.BlockListener.*;
 import static com.github.telvarost.oldandornate.events.init.ItemListener.ADOBE_BRICK;
+import static com.github.telvarost.oldandornate.events.init.ItemListener.LAPIS_LAZULI_SWORD;
 
 public class RecipeListener {
 
@@ -22,12 +23,16 @@ public class RecipeListener {
         Identifier type = event.recipeId;
 
         if (type == RecipeRegisterEvent.Vanilla.CRAFTING_SHAPED.type()) {
+            if (Config.config.OTHER_CONFIG.enableLapisLazuliSwordRecipe) {
+                CraftingRegistry.addShapedRecipe(new ItemStack(LAPIS_LAZULI_SWORD, 1), "X", "X", "Y", 'X', new ItemStack(Item.DYE, 1, 4), 'Y', Item.STICK);
+            }
+
             if (Config.config.ADOBE_CONFIG.enableAdobeBricksRecipe) {
                 CraftingRegistry.addShapedRecipe(new ItemStack(ADOBE_BRICKS.asItem(), 1), "XX", "XX", 'X', ADOBE_BRICK);
             }
 
             if (AdobeBrickRecipeEnum.OLD_RECIPE == Config.config.ADOBE_CONFIG.adobeBrickRecipe) {
-                CraftingRegistry.addShapedRecipe(new ItemStack(ADOBE_BRICK.asItem(), 4), "XX", "XX", 'X', ADOBE);
+                CraftingRegistry.addShapedRecipe(new ItemStack(ADOBE_BRICK, 4), "XX", "XX", 'X', ADOBE);
             }
         }
 

@@ -54,5 +54,13 @@
 
   "recommends": {
     "modmenu": "*"
+  },
+
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_127": [
+        "com/github/telvarost/oldandornate/interfaces/FrozenInterface"
+      ]
+    }
   }
 }
