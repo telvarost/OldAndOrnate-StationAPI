@@ -11,5 +11,6 @@ public class ModHelper {
     public static Namespace NAMESPACE = Null.get();
 
     public static class ModHelperFields {
+        public static String currentStreamingSong = null;
     }
 }

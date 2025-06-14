@@ -20,12 +20,10 @@ public class Config {
         )
         public StarFlowerConfig STAR_FLOWER_CONFIG = new StarFlowerConfig();
 
-        @ConfigEntry(
-                name = "Enable Furnace Minecart Music",
-                description = "Makes it play a song when it is used",
-                multiplayerSynced = true
+        @ConfigCategory(
+                name = "Other Config"
         )
-        public Boolean enableFurnaceMinecartMusic = true;
+        public OtherConfig OTHER_CONFIG = new OtherConfig();
     }
 
     public static class AdobeConfig {
@@ -84,5 +82,14 @@ public class Config {
                 multiplayerSynced = true
         )
         public StarFlowerGenerationEnum starFlowerTerrainGeneration = StarFlowerGenerationEnum.SPECIFIC_BIOMES;
+    }
+
+    public static class OtherConfig {
+        @ConfigEntry(
+                name = "Enable Furnace Minecart Music",
+                description = "Makes it play a song when charcoal is used",
+                multiplayerSynced = true
+        )
+        public Boolean enableFurnaceMinecartMusic = true;
     }
 }

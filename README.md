@@ -41,6 +41,13 @@ Adds star flower block, recipes, and terrain generation (ported from mod archive
   * Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
     * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
 
+### Other Features
+Adds some other small new add-ons!
+* Furnace Minecart Theme Song
+  * The furnace minecart will now play a song when charcoal is used to power it (default enabled)
+  * The song will not play if a jukebox is playing a disc
+  * The song will end if any nearby furnace minecart is destroyed
+
 ## Installation using Prism Launcher
 
 1. Download an instance of Babric for Prism Launcher: https://github.com/Glass-Series/babric-prism-instance

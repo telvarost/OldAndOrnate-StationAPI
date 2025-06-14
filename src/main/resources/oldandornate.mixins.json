@@ -12,6 +12,9 @@
   "server": [
   ],
   "client": [
+    "client.SoundHelperAccessor",
+    "client.SoundHelperMixin",
+    "client.WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
