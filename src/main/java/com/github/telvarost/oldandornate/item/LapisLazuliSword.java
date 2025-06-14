@@ -19,6 +19,6 @@ public class LapisLazuliSword extends TemplateSwordItem {
             ((LivingEntity)attackedEntity).oldAndOrnate_setFrozenTicks(20);
         }
 
-        return 1;
+        return 2;
     }
 }
