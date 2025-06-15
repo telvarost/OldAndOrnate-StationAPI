@@ -54,6 +54,21 @@ Adds some other small new add-ons!
     * Has 64 durability, half the attack of a wooden/gold sword, and the mining speed of a wooden sword
   * Craft 2 lapis lazuli and 1 stick using the normal sword crafting shape (recipe enabled by default)
 
+### Default Recipes
+![default adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeRecipe.PNG)
+![default adobe brick smelt recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeBrickRecipe.PNG)
+![adobe bricks craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AdobeBricksRecipe.PNG)
+![star flower craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerCraftingRecipe.PNG)
+![star flower dye craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerDyeRecipe.PNG)
+![lapis lazuli sword craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/LapisLazuliSwordRecipe.PNG)
+
+### Alternate Recipes
+![alternate adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeRecipe.PNG)
+![alternate adobe brick craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeBrickRecipe.PNG)
+
+### Realism Recipes
+![realism adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/RealismAdobeRecipe.PNG)
+
 ## Installation using Prism Launcher
 
 1. Download an instance of Babric for Prism Launcher: https://github.com/Glass-Series/babric-prism-instance
