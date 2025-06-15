@@ -22,7 +22,7 @@ Adds adobe blocks, recipes, and terrain generation (ported from mod archive and 
     * Old: Craft 4 Adobe in a square
     * New: Smelt 1 Adobe
 * Adobe Bricks
-  * Weaker brick block
+  * Decorative but weaker brick block
   * 2 crafting recipe choices (default crafting recipe enabled):
     * Disable the crafting recipe
     * Craft 4 Adobe Brick in a square
