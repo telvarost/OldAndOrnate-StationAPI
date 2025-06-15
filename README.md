@@ -55,19 +55,19 @@ Adds some other small new add-ons!
   * Craft 2 lapis lazuli and 1 stick using the normal sword crafting shape (recipe enabled by default)
 
 ### Default Recipes
-![default adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeRecipe.PNG)
-![default adobe brick smelt recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeBrickRecipe.PNG)
-![adobe bricks craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AdobeBricksRecipe.PNG)
-![star flower craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerCraftingRecipe.PNG)
-![star flower dye craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerDyeRecipe.PNG)
-![lapis lazuli sword craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/LapisLazuliSwordRecipe.PNG)
+![default adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeRecipe.png)
+![default adobe brick smelt recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeBrickRecipe.png)
+![adobe bricks craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AdobeBricksRecipe.png)
+![star flower craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerCraftingRecipe.png)
+![star flower dye craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerDyeRecipe.png)
+![lapis lazuli sword craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/LapisLazuliSwordRecipe.png)
 
 ### Alternate Recipes
-![alternate adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeRecipe.PNG)
-![alternate adobe brick craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeBrickRecipe.PNG)
+![alternate adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeRecipe.png)
+![alternate adobe brick craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeBrickRecipe.png)
 
 ### Realism Recipes
-![realism adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/RealismAdobeRecipe.PNG)
+![realism adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/RealismAdobeRecipe.png)
 
 ## Installation using Prism Launcher
 
