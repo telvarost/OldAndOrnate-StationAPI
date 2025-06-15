@@ -45,8 +45,8 @@ Adds star flower block, recipes, and terrain generation (ported from mod archive
 Adds some other small new add-ons!
 * Furnace Minecart Theme Song
   * The furnace minecart will now play a song when charcoal is used to power it (default enabled)
-  * The song will not play if a jukebox is playing a disc
-  * The song will end if any nearby furnace minecart is destroyed
+    * The song will not play if a jukebox is playing a disc
+    * The song will end if any nearby furnace minecart is destroyed
 * Lapis Lazuli Sword
   * A weak sword made from a deep blue rock locked in time under the earth
     * On hit chills enemies for 1 second (potentially freezing them for 0.75 seconds)
