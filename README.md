@@ -66,7 +66,7 @@ Adds some other small new add-ons!
 ![alternate adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeRecipe.png)
 ![alternate adobe brick craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AlternateAdobeBrickRecipe.png)
 
-### Realism Recipes
+### Alternate Recipes (Realism)
 ![realism adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/RealismAdobeRecipe.png)
 
 ## Installation using Prism Launcher
