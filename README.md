@@ -38,8 +38,8 @@ Adds star flower block, recipes, and terrain generation (ported from mod archive
   * Flower that glows faintly
   * Craft 1 glowstone dust with 1 dandelion to get 1 star flower (recipe enabled by default)
   * Craft 1 star flower to get 2 lime dye (recipe enabled by default)
-  * Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
-    * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
+* Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
+  * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
 
 ### Other Features
 Adds some other small new add-ons!
