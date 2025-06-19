@@ -1,6 +1,7 @@
-# OldAndOrnate StationAPI Edition for Minecraft Beta 1.7.3
+# OldAndOrnate StationAPI for Minecraft Beta 1.7.3
 
 A StationAPI mod for Minecraft Beta 1.7.3 that adds in a few small old features and other random ornate addons.
+- Requires [Nadrazi API](https://modrinth.com/mod/nadraziapi) (used to freeze/chill enemies when hit with the Lapis Lazuli Sword)
 
 # Old and Ornate
 Mod now works on Multiplayer with GlassConfigAPI version 3.0+ used to sync configs!
