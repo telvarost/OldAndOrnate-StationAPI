@@ -5,7 +5,6 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "DeadBushBlockMixin",
-    "LivingEntityMixin",
     "MinecartEntityMixin",
     "OverworldChunkGeneratorMixin",
     "PlantBlockMixin"
@@ -13,7 +12,6 @@
   "server": [
   ],
   "client": [
-    "client.LivingEntityRendererMixin",
     "client.SoundHelperAccessor",
     "client.SoundHelperMixin",
     "client.WorldRendererMixin"

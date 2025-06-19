@@ -120,6 +120,8 @@ dependencies {
 	modRuntimeOnly ("maven.modrinth:clientsideessentials-stationapi:${project.clientsideessentials_version}") {
 		transitive false
 	}
+
+	modImplementation files("lib/NadraziAPI-1.0.0.jar")
 }
 
 processResources {

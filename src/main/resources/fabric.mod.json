@@ -48,19 +48,12 @@
 
   "depends": {
     "minecraft": "1.0.0-beta.7.3",
-    "gcapi3": ">=3.0.1",
-    "stationapi": "*"
+    "nadraziapi": "*",
+    "stationapi": "*",
+    "gcapi3": ">=3.0.1"
   },
 
   "recommends": {
     "modmenu": "*"
-  },
-
-  "custom": {
-    "loom:injected_interfaces": {
-      "net/minecraft/class_127": [
-        "com/github/telvarost/oldandornate/interfaces/FrozenInterface"
-      ]
-    }
   }
 }
