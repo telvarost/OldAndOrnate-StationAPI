@@ -121,7 +121,7 @@ dependencies {
 		transitive false
 	}
 
-	modImplementation files("lib/NadraziAPI-1.0.0.jar")
+	modImplementation files("lib/ZastavkaAPI-1.0.0.jar")
 }
 
 processResources {

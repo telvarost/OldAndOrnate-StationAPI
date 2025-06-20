@@ -1,6 +1,6 @@
 package com.github.telvarost.oldandornate.item;
 
-import com.github.telvarost.nadraziapi.NadraziHelper;
+import com.github.telvarost.zastavkaapi.ZastavkaHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
@@ -18,7 +18,7 @@ public class LapisLazuliSword extends TemplateSwordItem {
     @Override
     public int getAttackDamage(Entity attackedEntity) {
         if (attackedEntity instanceof LivingEntity && !(attackedEntity instanceof SheepEntity && !((SheepEntity)attackedEntity).isSheared())) {
-            NadraziHelper.setFrozen((LivingEntity)attackedEntity, 20);
+            ZastavkaHelper.setFrozen((LivingEntity)attackedEntity, 20);
         }
 
         return 2;
