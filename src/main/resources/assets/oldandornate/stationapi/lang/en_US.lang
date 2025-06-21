@@ -2,6 +2,9 @@ tab.@.adobe.name=Old And Ornate
 
 tile.@.adobe.name=Adobe
 tile.@.adobe_bricks.name=Adobe Bricks
+tile.@.dungeon_platform.name=Dungeon Platform
+tile.@.faltering_platform.name=Faltering Platform
+tile.@.ghost_platform.name=Ghost Platform
 tile.@.star_flower.name=Star Flower
 
 item.@.adobe_brick.name=Adobe Brick

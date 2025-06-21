@@ -1,4 +1,4 @@
-package com.github.telvarost.oldandornate;
+package com.github.telvarost.oldandornate.enums;
 
 public enum AdobeRecipeEnum {
     NO_RECIPE("No Recipe"),

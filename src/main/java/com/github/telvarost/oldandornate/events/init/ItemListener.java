@@ -8,10 +8,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 
-import javax.tools.Tool;
-
 public class ItemListener {
     public static Item[] items;
+
     public static Item ADOBE_BRICK;
     public static Item LAPIS_LAZULI_SWORD;
 

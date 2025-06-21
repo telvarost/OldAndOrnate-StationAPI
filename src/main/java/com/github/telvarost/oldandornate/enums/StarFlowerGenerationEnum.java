@@ -1,4 +1,4 @@
-package com.github.telvarost.oldandornate;
+package com.github.telvarost.oldandornate.enums;
 
 public enum StarFlowerGenerationEnum {
     NO_BIOMES("No Biomes"),

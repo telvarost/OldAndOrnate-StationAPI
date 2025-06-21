@@ -37,9 +37,9 @@
       "com.github.telvarost.oldandornate.Config"
     ],
     "gcapi3:factory_provider": [
-      "com.github.telvarost.oldandornate.AdobeBrickRecipeEnumFactory",
-      "com.github.telvarost.oldandornate.AdobeRecipeEnumFactory",
-      "com.github.telvarost.oldandornate.StarFlowerGenerationEnumFactory"
+      "com.github.telvarost.oldandornate.enums.AdobeBrickRecipeEnumFactory",
+      "com.github.telvarost.oldandornate.enums.AdobeRecipeEnumFactory",
+      "com.github.telvarost.oldandornate.enums.StarFlowerGenerationEnumFactory"
     ]
   },
   "mixins": [

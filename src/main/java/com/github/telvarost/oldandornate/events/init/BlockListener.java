@@ -2,8 +2,8 @@ package com.github.telvarost.oldandornate.events.init;
 
 import com.github.telvarost.oldandornate.Config;
 import com.github.telvarost.oldandornate.ModHelper;
-import com.github.telvarost.oldandornate.block.Adobe;
-import com.github.telvarost.oldandornate.block.StarFlower;
+import com.github.telvarost.oldandornate.OldAndOrnate;
+import com.github.telvarost.oldandornate.block.*;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -17,6 +17,9 @@ public class BlockListener {
 
     public static Block ADOBE;
     public static Block ADOBE_BRICKS;
+    public static Block DUNGEON_PLATFORM;
+    public static Block FALTERING_PLATFORM;
+    public static Block GHOST_PLATFORM;
     public static Block STAR_FLOWER;
 
     @EventListener
@@ -27,13 +30,19 @@ public class BlockListener {
             adobeHardnessAdjustment = 0.25F;
         }
 
-        ADOBE = new Adobe(Identifier.of(ModHelper.NAMESPACE, "adobe"), Material.SOLID_ORGANIC).setHardness(0.5F + adobeHardnessAdjustment).setSoundGroup(GRAVEL_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "adobe");
-        ADOBE_BRICKS = new Adobe(Identifier.of(ModHelper.NAMESPACE, "adobe_bricks"), Material.STONE).setHardness(1.5F - adobeHardnessAdjustment).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "adobe_bricks");
-        STAR_FLOWER = new StarFlower(Identifier.of(ModHelper.NAMESPACE, "star_flower"), 0).setLuminance(0.7F).setSoundGroup(DIRT_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "star_flower");
+        ADOBE              = new Adobe            (Identifier.of(ModHelper.NAMESPACE, "adobe"), Material.SOLID_ORGANIC).setHardness(0.5F + adobeHardnessAdjustment).setSoundGroup(GRAVEL_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "adobe");
+        ADOBE_BRICKS       = new AdobeBricks      (Identifier.of(ModHelper.NAMESPACE, "adobe_bricks"), Material.STONE).setHardness(1.5F - adobeHardnessAdjustment).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "adobe_bricks");
+        DUNGEON_PLATFORM   = new DungeonPlatform  (Identifier.of(ModHelper.NAMESPACE, "dungeon_platform"), Material.SAND).setHardness(2.0F).setResistance(10.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "dungeon_platform");
+        FALTERING_PLATFORM = new FalteringPlatform(Identifier.of(ModHelper.NAMESPACE, "faltering_platform"), OldAndOrnate.FALTERING_PLATFORM_TEXTURE).setHardness(1.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "faltering_platform");
+        GHOST_PLATFORM     = new GhostPlatform    (Identifier.of(ModHelper.NAMESPACE, "ghost_platform"), Material.SAND).setHardness(1.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "ghost_platform");
+        STAR_FLOWER        = new StarFlower       (Identifier.of(ModHelper.NAMESPACE, "star_flower"), OldAndOrnate.STAR_FLOWER_TEXTURE).setLuminance(0.7F).setSoundGroup(DIRT_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "star_flower");
 
         blocks = new Block[]
         { ADOBE
         , ADOBE_BRICKS
+        , DUNGEON_PLATFORM
+        , FALTERING_PLATFORM
+        , GHOST_PLATFORM
         , STAR_FLOWER
         };
     }

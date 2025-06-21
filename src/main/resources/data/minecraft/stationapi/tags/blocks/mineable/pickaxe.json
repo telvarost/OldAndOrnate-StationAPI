@@ -1,5 +1,8 @@
 {
   "values": [
-    "oldandornate:adobe_bricks"
+    "oldandornate:adobe_bricks",
+    "oldandornate:dungeon_platform",
+    "oldandornate:faltering_platform",
+    "oldandornate:ghost_platform"
   ]
 }

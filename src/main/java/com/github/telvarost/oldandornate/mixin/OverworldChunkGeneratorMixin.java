@@ -1,7 +1,7 @@
 package com.github.telvarost.oldandornate.mixin;
 
 import com.github.telvarost.oldandornate.Config;
-import com.github.telvarost.oldandornate.StarFlowerGenerationEnum;
+import com.github.telvarost.oldandornate.enums.StarFlowerGenerationEnum;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.world.World;

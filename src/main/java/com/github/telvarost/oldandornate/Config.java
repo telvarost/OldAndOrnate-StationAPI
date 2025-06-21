@@ -1,5 +1,8 @@
 package com.github.telvarost.oldandornate;
 
+import com.github.telvarost.oldandornate.enums.AdobeBrickRecipeEnum;
+import com.github.telvarost.oldandornate.enums.AdobeRecipeEnum;
+import com.github.telvarost.oldandornate.enums.StarFlowerGenerationEnum;
 import net.glasslauncher.mods.gcapi3.api.*;
 
 public class Config {
@@ -85,6 +88,13 @@ public class Config {
     }
 
     public static class OtherConfig {
+        @ConfigEntry(
+                name = "Enable Dungeon Platform Recipe",
+                description = "Restart required for changes to take effect",
+                multiplayerSynced = true
+        )
+        public Boolean enableDungeonPlatformRecipe = true;
+
         @ConfigEntry(
                 name = "Enable Furnace Minecart Music",
                 description = "Makes it play a song when charcoal is used",

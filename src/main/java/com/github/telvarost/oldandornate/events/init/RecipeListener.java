@@ -1,7 +1,7 @@
 package com.github.telvarost.oldandornate.events.init;
 
-import com.github.telvarost.oldandornate.AdobeBrickRecipeEnum;
-import com.github.telvarost.oldandornate.AdobeRecipeEnum;
+import com.github.telvarost.oldandornate.enums.AdobeBrickRecipeEnum;
+import com.github.telvarost.oldandornate.enums.AdobeRecipeEnum;
 import com.github.telvarost.oldandornate.Config;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
@@ -23,6 +23,10 @@ public class RecipeListener {
         Identifier type = event.recipeId;
 
         if (type == RecipeRegisterEvent.Vanilla.CRAFTING_SHAPED.type()) {
+            if (Config.config.OTHER_CONFIG.enableDungeonPlatformRecipe) {
+                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 1), "XY", "YX", 'X', new ItemStack(Item.DYE, 1, 4), 'Y', Item.CLAY);
+            }
+
             if (Config.config.OTHER_CONFIG.enableLapisLazuliSwordRecipe) {
                 CraftingRegistry.addShapedRecipe(new ItemStack(LAPIS_LAZULI_SWORD, 1), "X", "X", "Y", 'X', new ItemStack(Item.DYE, 1, 4), 'Y', Item.STICK);
             }
