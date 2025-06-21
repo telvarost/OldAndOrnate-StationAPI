@@ -32,9 +32,9 @@ public class BlockListener {
 
         ADOBE              = new Adobe            (Identifier.of(ModHelper.NAMESPACE, "adobe"), Material.SOLID_ORGANIC).setHardness(0.5F + adobeHardnessAdjustment).setSoundGroup(GRAVEL_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "adobe");
         ADOBE_BRICKS       = new AdobeBricks      (Identifier.of(ModHelper.NAMESPACE, "adobe_bricks"), Material.STONE).setHardness(1.5F - adobeHardnessAdjustment).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "adobe_bricks");
-        DUNGEON_PLATFORM   = new DungeonPlatform  (Identifier.of(ModHelper.NAMESPACE, "dungeon_platform"), Material.SAND).setHardness(2.0F).setResistance(10.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "dungeon_platform");
-        FALTERING_PLATFORM = new FalteringPlatform(Identifier.of(ModHelper.NAMESPACE, "faltering_platform"), OldAndOrnate.FALTERING_PLATFORM_TEXTURE).setHardness(1.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "faltering_platform");
-        GHOST_PLATFORM     = new GhostPlatform    (Identifier.of(ModHelper.NAMESPACE, "ghost_platform"), Material.SAND).setHardness(1.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "ghost_platform");
+        DUNGEON_PLATFORM   = new DungeonPlatform  (Identifier.of(ModHelper.NAMESPACE, "dungeon_platform"), Material.STONE).setHardness(2.0F).setResistance(2000.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "dungeon_platform");
+        FALTERING_PLATFORM = new FalteringPlatform(Identifier.of(ModHelper.NAMESPACE, "faltering_platform"), Material.STONE).setHardness(1.5F).setResistance(200.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "faltering_platform");
+        GHOST_PLATFORM     = new GhostPlatform    (Identifier.of(ModHelper.NAMESPACE, "ghost_platform"), Material.STONE).setHardness(1.0F).setResistance(20.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "ghost_platform");
         STAR_FLOWER        = new StarFlower       (Identifier.of(ModHelper.NAMESPACE, "star_flower"), OldAndOrnate.STAR_FLOWER_TEXTURE).setLuminance(0.7F).setSoundGroup(DIRT_SOUND_GROUP).setTranslationKey(ModHelper.NAMESPACE, "star_flower");
 
         blocks = new Block[]
