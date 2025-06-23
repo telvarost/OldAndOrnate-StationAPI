@@ -70,6 +70,7 @@ Adds some other small new add-ons!
 ![default adobe craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeRecipe.png)
 ![default adobe brick smelt recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DefaultAdobeBrickRecipe.png)
 ![adobe bricks craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/AdobeBricksRecipe.png)
+![dungeon platform craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/DungeonPlatformRecipe.png)
 ![star flower craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerCraftingRecipe.png)
 ![star flower dye craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/StarFlowerDyeRecipe.png)
 ![lapis lazuli sword craft recipe](https://github.com/telvarost/OldAndOrnate-StationAPI/blob/main/images/LapisLazuliSwordRecipe.png)

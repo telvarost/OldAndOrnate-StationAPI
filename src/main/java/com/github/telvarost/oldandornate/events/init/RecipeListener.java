@@ -23,12 +23,12 @@ public class RecipeListener {
         Identifier type = event.recipeId;
 
         if (type == RecipeRegisterEvent.Vanilla.CRAFTING_SHAPED.type()) {
-            if (Config.config.OTHER_CONFIG.enableDungeonPlatformRecipe) {
-                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 4), "XY", "YX", 'X', Block.LAPIS_BLOCK, 'Y', Block.SOUL_SAND);
-            }
-
             if (Config.config.OTHER_CONFIG.enableLapisLazuliSwordRecipe) {
                 CraftingRegistry.addShapedRecipe(new ItemStack(LAPIS_LAZULI_SWORD, 1), "X", "X", "Y", 'X', new ItemStack(Item.DYE, 1, 4), 'Y', Item.STICK);
+            }
+
+            if (Config.config.DUNGEON_PLATFORM_CONFIG.enableDungeonPlatformRecipe) {
+                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 4), "XY", "YX", 'X', Block.LAPIS_BLOCK, 'Y', Block.SOUL_SAND);
             }
 
             if (Config.config.ADOBE_CONFIG.enableAdobeBricksRecipe) {

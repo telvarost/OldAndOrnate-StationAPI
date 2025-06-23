@@ -18,6 +18,12 @@ public class Config {
         public AdobeConfig ADOBE_CONFIG = new AdobeConfig();
 
         @ConfigCategory(
+                name = "Dungeon Platform Config",
+                description = "Restart required for changes to take effect"
+        )
+        public DungeonPlatformConfig DUNGEON_PLATFORM_CONFIG = new DungeonPlatformConfig();
+
+        @ConfigCategory(
                 name = "Star Flower Config",
                 description = "Restart required for changes to take effect"
         )
@@ -64,6 +70,15 @@ public class Config {
         public Boolean useTweakedAdobeMiningSpeeds = true;
     }
 
+    public static class DungeonPlatformConfig {
+        @ConfigEntry(
+                name = "Enable Dungeon Platform Recipe",
+                description = "Craft 2 lapis blocks with 2 soul sand",
+                multiplayerSynced = true
+        )
+        public Boolean enableDungeonPlatformRecipe = true;
+    }
+
     public static class StarFlowerConfig {
         @ConfigEntry(
                 name = "Enable Star Flower Crafting Recipe",
@@ -88,13 +103,6 @@ public class Config {
     }
 
     public static class OtherConfig {
-        @ConfigEntry(
-                name = "Enable Dungeon Platform Recipe",
-                description = "Restart required for changes to take effect",
-                multiplayerSynced = true
-        )
-        public Boolean enableDungeonPlatformRecipe = true;
-
         @ConfigEntry(
                 name = "Enable Furnace Minecart Music",
                 description = "Makes it play a song when charcoal is used",
