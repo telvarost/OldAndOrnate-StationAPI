@@ -33,15 +33,6 @@ Adds adobe blocks, recipes, and terrain generation (ported from mod archive and 
   * Makes Adobe mine slower than dirt (and slower than the old mod)
   * Makes Adobe Bricks mine faster than stone (and faster than the old mod)
 
-### Star Flower Features
-Adds star flower block, recipes, and terrain generation (ported from mod archive and enhanced with configs)
-* Star Flower
-  * Flower that glows faintly
-  * Craft 1 glowstone dust with 1 dandelion to get 1 star flower (recipe enabled by default)
-  * Craft 1 star flower to get 2 lime dye (recipe enabled by default)
-* Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
-  * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
-
 ### Dungeon Platform Features
 Adds dungeon platform block and recipe
 * Dungeon Platform
@@ -50,8 +41,17 @@ Adds dungeon platform block and recipe
     * After the faltering platform falls it becomes a ghost platform that players will fall through but monsters can walk on
       * Faltering platforms do not produce blocks when they land
     * The ghost platform turns back into a dungeon platform after 5 seconds
-  * Craft 2 lapis lazuli blocks with 2 soul sand blocks to get 4 dungeon platform blocks (recipe enabled by default)
+  * Craft 2 lapis lazuli blocks with 2 soul sand to get 4 dungeon platforms (recipe enabled by default)
     * Recipe is a square and blocks must be diagonal from each other
+
+### Star Flower Features
+Adds star flower block, recipes, and terrain generation (ported from mod archive and enhanced with configs)
+* Star Flower
+  * Flower that glows faintly
+  * Craft 1 glowstone dust with 1 dandelion to get 1 star flower (recipe enabled by default)
+  * Craft 1 star flower to get 2 lime dye (recipe enabled by default)
+* Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
+  * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
 
 ### Other Features
 Adds some other small new add-ons!
