@@ -42,6 +42,17 @@ Adds star flower block, recipes, and terrain generation (ported from mod archive
 * Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
   * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
 
+### Dungeon Platform Features
+Adds dungeon platform block and recipe
+* Dungeon Platform
+  * Platform that falls when touched by a player and regenerates
+    * When touched by a player the dungeon platform becomes a faltering platform that falls after 5 seconds
+    * After the faltering platform falls it becomes a ghost platform that players will fall through but monsters can walk on
+      * Faltering platforms do not produce blocks when they land
+    * The ghost platform turns back into a dungeon platform after 5 seconds
+  * Craft 2 lapis lazuli blocks with 2 soul sand blocks to get 4 dungeon platform blocks (recipe enabled by default)
+    * Recipe is a square and blocks must be diagonal from each other
+
 ### Other Features
 Adds some other small new add-ons!
 * Furnace Minecart Theme Song
