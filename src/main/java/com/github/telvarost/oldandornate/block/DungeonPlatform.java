@@ -3,7 +3,7 @@ package com.github.telvarost.oldandornate.block;
 import com.github.telvarost.oldandornate.OldAndOrnate;
 import com.github.telvarost.zastavkaapi.ZastavkaHelper;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;
@@ -20,7 +20,11 @@ public class DungeonPlatform extends TemplateBlock {
 
     @Override
     public int getTexture(int side) {
-        return OldAndOrnate.DUNGEON_PLATFORM_TEXTURE;
+        if (side == 1) {
+            return OldAndOrnate.DUNGEON_PLATFORM_TEXTURE_TOP;
+        } else {
+            return side == 0 ? OldAndOrnate.DUNGEON_PLATFORM_TEXTURE_BOTTOM : OldAndOrnate.DUNGEON_PLATFORM_TEXTURE_SIDE;
+        }
     }
 
     @Override
@@ -28,7 +32,7 @@ public class DungeonPlatform extends TemplateBlock {
         Box var7 = this.getCollisionShape(world, x, y, z);
 
         if (var7 != null && box.intersects(var7)) {
-            if (ZastavkaHelper.collisionEntity instanceof LivingEntity) {
+            if (ZastavkaHelper.collisionEntity instanceof PlayerEntity) {
                 world.setBlock(x, y, z, FALTERING_PLATFORM.id);
             }
 

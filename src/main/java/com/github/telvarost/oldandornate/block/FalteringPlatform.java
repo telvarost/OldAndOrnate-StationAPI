@@ -27,7 +27,11 @@ public class FalteringPlatform extends TemplateBlockWithEntity {
 
     @Override
     public int getTexture(int side) {
-        return OldAndOrnate.FALTERING_PLATFORM_TEXTURE;
+        if (side == 1) {
+            return OldAndOrnate.FALTERING_PLATFORM_TEXTURE_TOP;
+        } else {
+            return side == 0 ? OldAndOrnate.FALTERING_PLATFORM_TEXTURE_BOTTOM : OldAndOrnate.FALTERING_PLATFORM_TEXTURE_SIDE;
+        }
     }
 
     @Override

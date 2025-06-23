@@ -3,7 +3,6 @@ package com.github.telvarost.oldandornate.block;
 import com.github.telvarost.oldandornate.OldAndOrnate;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.NoteBlockBlockEntity;
 import net.minecraft.block.material.Material;
@@ -60,7 +59,11 @@ public class GhostPlatform extends TemplateBlockWithEntity {
 
     @Override
     public int getTexture(int side) {
-        return OldAndOrnate.GHOST_PLATFORM_TEXTURE;
+        if (side == 1) {
+            return OldAndOrnate.GHOST_PLATFORM_TEXTURE_TOP;
+        } else {
+            return side == 0 ? OldAndOrnate.GHOST_PLATFORM_TEXTURE_TOP : OldAndOrnate.GHOST_PLATFORM_TEXTURE_SIDE;
+        }
     }
 
     @Override

@@ -14,9 +14,14 @@ public class TextureListener {
     public void registerTextures(TextureRegisterEvent event) {
         OldAndOrnate.ADOBE_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/adobe")).index;
         OldAndOrnate.ADOBE_BRICKS_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/adobe_bricks")).index;
-        OldAndOrnate.DUNGEON_PLATFORM_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/dungeon_platform")).index;
-        OldAndOrnate.FALTERING_PLATFORM_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/faltering_platform")).index;
-        OldAndOrnate.GHOST_PLATFORM_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/ghost_platform")).index;
+        OldAndOrnate.DUNGEON_PLATFORM_TEXTURE_TOP = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/dungeon_platform_top")).index;
+        OldAndOrnate.DUNGEON_PLATFORM_TEXTURE_SIDE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/dungeon_platform_side")).index;
+        OldAndOrnate.DUNGEON_PLATFORM_TEXTURE_BOTTOM = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/dungeon_platform_bottom")).index;
+        OldAndOrnate.FALTERING_PLATFORM_TEXTURE_TOP = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/faltering_platform_top")).index;
+        OldAndOrnate.FALTERING_PLATFORM_TEXTURE_SIDE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/faltering_platform_side")).index;
+        OldAndOrnate.FALTERING_PLATFORM_TEXTURE_BOTTOM = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/faltering_platform_bottom")).index;
+        OldAndOrnate.GHOST_PLATFORM_TEXTURE_TOP = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/ghost_platform_top")).index;
+        OldAndOrnate.GHOST_PLATFORM_TEXTURE_SIDE = Atlases.getTerrain().addTexture(Identifier.of(ModHelper.NAMESPACE, "block/ghost_platform_side")).index;
 
         ItemListener.ADOBE_BRICK.setTexture(ModHelper.NAMESPACE.id("item/adobe_brick"));
         ItemListener.LAPIS_LAZULI_SWORD.setTexture(ModHelper.NAMESPACE.id("item/lapis_lazuli_sword"));
