@@ -24,7 +24,7 @@ public class RecipeListener {
 
         if (type == RecipeRegisterEvent.Vanilla.CRAFTING_SHAPED.type()) {
             if (Config.config.OTHER_CONFIG.enableDungeonPlatformRecipe) {
-                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 1), "XY", "YX", 'X', new ItemStack(Item.DYE, 1, 4), 'Y', Item.CLAY);
+                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 4), "XY", "YX", 'X', Block.LAPIS_BLOCK, 'Y', Block.SOUL_SAND);
             }
 
             if (Config.config.OTHER_CONFIG.enableLapisLazuliSwordRecipe) {

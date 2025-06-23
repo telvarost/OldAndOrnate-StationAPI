@@ -1,17 +1,18 @@
 package com.github.telvarost.oldandornate.block;
 
 import com.github.telvarost.oldandornate.OldAndOrnate;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
+import com.github.telvarost.zastavkaapi.ZastavkaHelper;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.NoteBlockBlockEntity;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.mob.MonsterEntity;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockWithEntity;
 import net.modificationstation.stationapi.api.util.Identifier;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import static com.github.telvarost.oldandornate.events.init.BlockListener.DUNGEON_PLATFORM;
@@ -24,12 +25,6 @@ public class GhostPlatform extends TemplateBlockWithEntity {
     @Override
     protected BlockEntity createBlockEntity() {
         return new NoteBlockBlockEntity();
-    }
-
-    @Environment(EnvType.CLIENT)
-    @Override
-    public Box getBoundingBox(World world, int x, int y, int z) {
-        return Box.createCached(0, 0, 0, 0, 0, 0);
     }
 
     @Override
@@ -45,11 +40,6 @@ public class GhostPlatform extends TemplateBlockWithEntity {
     @Override
     public boolean hasCollision() {
         return false;
-    }
-
-    @Override
-    public Box getCollisionShape(World world, int x, int y, int z) {
-        return Box.createCached(0, 0, 0, 0, 0, 0);
     }
 
     @Override
@@ -89,5 +79,16 @@ public class GhostPlatform extends TemplateBlockWithEntity {
     @Override
     public int getDroppedItemId(int blockMeta, Random random) {
         return DUNGEON_PLATFORM.id;
+    }
+
+    @Override
+    public void addIntersectingBoundingBox(World world, int x, int y, int z, Box box, ArrayList boxes) {
+        Box var7 = this.getCollisionShape(world, x, y, z);
+
+        if (var7 != null && box.intersects(var7)) {
+            if (ZastavkaHelper.collisionEntity instanceof MonsterEntity) {
+                boxes.add(var7);
+            }
+        }
     }
 }
