@@ -7,6 +7,6 @@ import java.util.Random;
 
 public class ModHelperMusicDiscs {
     public static ItemStack getRandomDisc(Random random) {
-        return new ItemStack(Discs.items[random.nextInt(Discs.items.length - 1)], 1);
+        return new ItemStack(Discs.dungeonDiscSpawnList.get(random.nextInt(Discs.dungeonDiscSpawnList.size())), 1);
     }
 }
