@@ -117,11 +117,19 @@ dependencies {
 		transitive false
 	}
 
-	modRuntimeOnly ("maven.modrinth:clientsideessentials-stationapi:${project.clientsideessentials_version}") {
+	modImplementation ("maven.modrinth:clientsideessentials-stationapi:${project.clientsideessentials_version}") {
 		transitive false
 	}
 
-	modImplementation files("lib/ZastavkaAPI-1.0.1.jar")
+	modImplementation ("maven.modrinth:elemental-creepers-stapi:${project.elementalcreepers_version}") {
+		transitive false
+	}
+
+	modImplementation ("maven.modrinth:zastavkaapi:${project.zastavkaapi_version}") {
+		transitive false
+	}
+
+	modImplementation files("lib/b1.7.3-Music-Discs-1.3.0-candidate.1.jar")
 }
 
 processResources {
