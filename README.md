@@ -37,12 +37,15 @@ Adds adobe blocks, recipes, and terrain generation (ported from mod archive and 
 Adds dungeon platform block and recipe
 * Dungeon Platform
   * Platform that falls when touched by a player and regenerates
-    * When touched by a player the dungeon platform becomes a faltering platform that falls after 5 seconds
+    * When touched by a player the dungeon platform becomes a faltering platform that falls after 6 seconds
     * After the faltering platform falls it becomes a ghost platform that players will fall through but monsters can walk on
       * Faltering platforms do not produce blocks when they land
-    * The ghost platform turns back into a dungeon platform after 5 seconds
-  * Craft 2 lapis lazuli blocks with 2 soul sand to get 4 dungeon platforms (recipe enabled by default)
+    * The ghost platform turns back into a dungeon platform after 6 seconds
+  * Craft 2 obsidian with 2 soul sand to get 4 dungeon platforms (recipe enabled by default)
     * Recipe is a square and blocks must be diagonal from each other
+* Special config to generate unique bipyramid creeper dungeons in the sky dimension (default enabled)
+  * Compatible with Elemental Creepers mod and Music Discs mod (both assist in creating greater dungeon variety)
+  * NOTE: TNT in these dungeons is set to explode when punched, so be careful! (spawns rarely)
 
 ### Star Flower Features
 Adds star flower block, recipes, and terrain generation (ported from mod archive and enhanced with configs)
@@ -52,6 +55,7 @@ Adds star flower block, recipes, and terrain generation (ported from mod archive
   * Craft 1 star flower to get 2 lime dye (recipe enabled by default)
 * Special config to limit terrain generation to specific biomes or to disable it entirely (specific biomes selected by default)
   * When specific biomes is selected, star flowers will only generate in the shrubland, seasonal forest, swampland, and tundra biomes
+  * Separate config available for enabling/disabling star flower terrain generation in the sky dimension (default enabled)
 
 ### Other Features
 Adds some other small new add-ons!
