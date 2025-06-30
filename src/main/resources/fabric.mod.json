@@ -20,7 +20,7 @@
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "com.github.telvarost.oldandornate.ModHelper",
+      "com.github.telvarost.oldandornate.OldAndOrnate",
       "com.github.telvarost.oldandornate.events.init.BlockListener",
       "com.github.telvarost.oldandornate.events.init.ItemListener",
       "com.github.telvarost.oldandornate.events.init.RecipeListener"

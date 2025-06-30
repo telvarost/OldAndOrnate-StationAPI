@@ -4,6 +4,8 @@ import java.util.Random;
 
 import com.github.telvarost.oldandornate.ModHelperElementalCreepers;
 import com.github.telvarost.oldandornate.ModHelperMusicDiscs;
+import com.github.telvarost.oldandornate.OldAndOrnate;
+import com.github.telvarost.oldandornate.SkyDungeonLoot;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.ChestBlockEntity;
@@ -203,49 +205,51 @@ public class SkyDungeonFeature extends Feature {
     }
 
     private ItemStack getRandomChestItem(Random random, World world, int x, int z) {
-        int var2 = random.nextInt(11);
-        if (var2 == 0) {
-            return new ItemStack(Block.COBWEB);
-        } else if (var2 == 1) {
-            return new ItemStack(Item.GOLD_INGOT, random.nextInt(4) + 1);
-        } else if (var2 == 2) {
-            return new ItemStack(Item.APPLE);
-        } else if (var2 == 3) {
-            return new ItemStack(Item.SNOWBALL, random.nextInt(4) + 1);
-        } else if (var2 == 4) {
-            return new ItemStack(Item.DYE, random.nextInt(4) + 1, 4);
-        } else if (var2 == 5) {
-            return new ItemStack(Item.CLAY, random.nextInt(4) + 1);
-        } else if (var2 == 6) {
-            return new ItemStack(Item.GLOWSTONE_DUST, random.nextInt(4) + 1);
-        } else if (var2 == 7 && random.nextInt(100) == 0) {
-            return new ItemStack(Item.GOLDEN_APPLE);
-        } else if (var2 == 8 && random.nextInt(10) == 0) {
-            if (!hasDungeonMap) {
-                hasDungeonMap = true;
-                ItemStack mapItemStack = new ItemStack(Item.MAP);
-                mapItemStack.setDamage(world.getIdCount("map"));
-                String mapId = "map_" + mapItemStack.getDamage();
-                MapState var5 = new MapState(mapId);
-                world.setState(mapId, var5);
-                var5.centerX = x;
-                var5.centerZ = z;
-                var5.scale = 3;
-                var5.dimension = (byte)world.dimension.id;
-                var5.markDirty();
-                return mapItemStack;
-            } else {
-                return new ItemStack(Item.STRING, random.nextInt(4) + 1);
+        int lootIndex = random.nextInt(OldAndOrnate.skylandsDungeonLootTable.size());
+        SkyDungeonLoot skyDungeonLoot = OldAndOrnate.skylandsDungeonLootTable.get(lootIndex);
+        ItemStack itemStackToSpawn = skyDungeonLoot.itemStack.copy();
+        //itemStackToSpawn.writeNbt(skyDungeonLoot.itemStack.readNbt());
+
+        if (-1 != skyDungeonLoot.randBound) {
+            if (random.nextInt(skyDungeonLoot.randBound) != 0) {
+                itemStackToSpawn = null;
             }
-        } else if (var2 == 9 && random.nextInt(10) == 0) {
-            if (FabricLoader.getInstance().isModLoaded("musicdiscs")) {
-                return ModHelperMusicDiscs.getRandomDisc(random);
-            } else {
-                return new ItemStack(Item.ITEMS[Item.RECORD_THIRTEEN.id + random.nextInt(2)]);
-            }
-        } else {
-            return var2 == 10 ? new ItemStack(Item.DYE, 1, 3) : null;
         }
+
+        if (null != itemStackToSpawn) {
+            if (1 < skyDungeonLoot.randCount) {
+                itemStackToSpawn.count = random.nextInt(skyDungeonLoot.randCount) + 1;
+            } else if (1 == skyDungeonLoot.randCount) {
+                itemStackToSpawn.count = 1;
+            }
+
+            if (itemStackToSpawn.itemId == Item.MAP.id) {
+                if (!hasDungeonMap) {
+                    hasDungeonMap = true;
+                    ItemStack mapItemStack = new ItemStack(Item.MAP);
+                    mapItemStack.setDamage(world.getIdCount("map"));
+                    String mapId = "map_" + mapItemStack.getDamage();
+                    MapState mapState = new MapState(mapId);
+                    world.setState(mapId, mapState);
+                    mapState.centerX = x;
+                    mapState.centerZ = z;
+                    mapState.scale = 3;
+                    mapState.dimension = (byte)world.dimension.id;
+                    mapState.markDirty();
+                    itemStackToSpawn = mapItemStack;
+                } else {
+                    itemStackToSpawn = new ItemStack(Item.STRING, random.nextInt(4) + 1);
+                }
+            } else if (itemStackToSpawn.itemId == Item.RECORD_THIRTEEN.id) {
+                if (FabricLoader.getInstance().isModLoaded("musicdiscs")) {
+                    itemStackToSpawn = ModHelperMusicDiscs.getRandomDisc(random);
+                } else {
+                    itemStackToSpawn = new ItemStack(Item.ITEMS[Item.RECORD_THIRTEEN.id + random.nextInt(2)]);
+                }
+            }
+        }
+
+        return itemStackToSpawn;
     }
 
     private String getRandomEntity(Random random) {
