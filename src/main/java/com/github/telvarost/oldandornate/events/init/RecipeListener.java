@@ -28,7 +28,7 @@ public class RecipeListener {
             }
 
             if (Config.config.DUNGEON_PLATFORM_CONFIG.enableDungeonPlatformRecipe) {
-                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 4), "XY", "YX", 'X', Block.LAPIS_BLOCK, 'Y', Block.SOUL_SAND);
+                CraftingRegistry.addShapedRecipe(new ItemStack(DUNGEON_PLATFORM.asItem(), 4), "XY", "YX", 'X', Block.OBSIDIAN, 'Y', Block.SOUL_SAND);
             }
 
             if (Config.config.ADOBE_CONFIG.enableAdobeBricksRecipe) {

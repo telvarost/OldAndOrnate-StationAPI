@@ -1,7 +1,7 @@
 package com.github.telvarost.oldandornate.mixin;
 
 import com.github.telvarost.oldandornate.Config;
-import com.github.telvarost.oldandornate.ModHelper;
+import com.github.telvarost.zastavkaapi.ZastavkaHelper;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.entity.Entity;
@@ -54,7 +54,7 @@ public abstract class MinecartEntityMixin extends Entity {
             )
     )
     public void damage(Entity damageSource, int amount, CallbackInfoReturnable<Boolean> cir) {
-        if (ModHelper.ModHelperFields.currentStreamingSong.startsWith("oldandornate:zeldrys")) {
+        if (ZastavkaHelper.currentStreamingSong.startsWith("oldandornate:zeldrys")) {
             this.world.playStreaming(
                     null,
                     (int)Math.round(this.x),

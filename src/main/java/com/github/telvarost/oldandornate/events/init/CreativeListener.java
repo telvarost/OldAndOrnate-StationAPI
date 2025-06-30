@@ -1,6 +1,6 @@
 package com.github.telvarost.oldandornate.events.init;
 
-import com.github.telvarost.oldandornate.ModHelper;
+import com.github.telvarost.oldandornate.OldAndOrnate;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,7 +14,7 @@ public class CreativeListener {
 
     @EventListener
     public void onTabInit(TabRegistryEvent event){
-        tabOldAndOrnate = new SimpleTab(ModHelper.NAMESPACE.id("adobe"), BlockListener.ADOBE.asItem());
+        tabOldAndOrnate = new SimpleTab(OldAndOrnate.OLD_AND_ORNATE.id("adobe"), BlockListener.ADOBE.asItem());
         event.register(tabOldAndOrnate);
 
         for (Block block : BlockListener.blocks){

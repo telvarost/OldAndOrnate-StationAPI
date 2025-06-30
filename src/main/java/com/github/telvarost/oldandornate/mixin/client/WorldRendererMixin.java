@@ -1,6 +1,6 @@
 package com.github.telvarost.oldandornate.mixin.client;
 
-import com.github.telvarost.oldandornate.ModHelper;
+import com.github.telvarost.zastavkaapi.ZastavkaHelper;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
@@ -27,8 +27,8 @@ public class WorldRendererMixin {
            && stream.startsWith("oldandornate:zeldrys")
         ) {
             if (  !((SoundHelperAccessor) this.client.soundManager).getSoundSystem().playing("streaming")
-               || (  ModHelper.ModHelperFields.currentStreamingSong != null
-                  && ModHelper.ModHelperFields.currentStreamingSong.startsWith("oldandornate:zeldrys")
+               || (  ZastavkaHelper.currentStreamingSong != null
+                  && ZastavkaHelper.currentStreamingSong.startsWith("oldandornate:zeldrys")
                   )
             ) {
                 this.client.soundManager.playStreaming(stream, (float)x, (float)y, (float)z, 1.0F, 1.0F);
