@@ -45,6 +45,7 @@ Adds dungeon platform block and recipe
     * Recipe is a square and blocks must be diagonal from each other
 * Special config to generate unique bipyramid creeper dungeons in the sky dimension (default enabled)
   * Compatible with Elemental Creepers mod and Music Discs mod (both assist in creating greater dungeon variety)
+    * Use Elemental Creeper's config to limit their natural spawn to account for the extra spawn from sky dungeons
   * NOTE: TNT in these dungeons is set to explode when punched, so be careful! (spawns rarely)
 
 ### Star Flower Features
