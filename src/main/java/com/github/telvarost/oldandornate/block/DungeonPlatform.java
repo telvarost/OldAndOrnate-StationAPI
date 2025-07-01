@@ -29,14 +29,14 @@ public class DungeonPlatform extends TemplateBlock {
 
     @Override
     public void addIntersectingBoundingBox(World world, int x, int y, int z, Box box, ArrayList boxes) {
-        Box var7 = this.getCollisionShape(world, x, y, z);
+        Box collisionBox = this.getCollisionShape(world, x, y, z);
 
-        if (var7 != null && box.intersects(var7)) {
+        if (collisionBox != null && box.intersects(collisionBox)) {
             if (ZastavkaHelper.collisionEntity instanceof PlayerEntity) {
                 world.setBlock(x, y, z, FALTERING_PLATFORM.id);
             }
 
-            boxes.add(var7);
+            boxes.add(collisionBox);
         }
     }
 }

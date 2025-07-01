@@ -1,9 +1,9 @@
 package com.github.telvarost.oldandornate.block;
 
 import com.github.telvarost.oldandornate.OldAndOrnate;
+import com.github.telvarost.oldandornate.blockentity.PlatformBlockEntity;
 import com.github.telvarost.zastavkaapi.ZastavkaHelper;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.NoteBlockBlockEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.mob.MonsterEntity;
 import net.minecraft.util.math.Box;
@@ -24,7 +24,7 @@ public class GhostPlatform extends TemplateBlockWithEntity {
 
     @Override
     protected BlockEntity createBlockEntity() {
-        return new NoteBlockBlockEntity();
+        return new PlatformBlockEntity();
     }
 
     @Override
@@ -57,37 +57,17 @@ public class GhostPlatform extends TemplateBlockWithEntity {
     }
 
     @Override
-    public void onPlaced(World world, int x, int y, int z) {
-        world.scheduleBlockUpdate(x, y, z, this.id, this.getTickRate());
-    }
-
-    @Override
-    public void neighborUpdate(World world, int x, int y, int z, int id) {
-        world.scheduleBlockUpdate(x, y, z, this.id, this.getTickRate());
-    }
-
-    @Override
-    public int getTickRate() {
-        return 100;
-    }
-
-    @Override
-    public void onTick(World world, int x, int y, int z, Random random) {
-        world.setBlock(x, y, z, DUNGEON_PLATFORM.id);
-    }
-
-    @Override
     public int getDroppedItemId(int blockMeta, Random random) {
         return DUNGEON_PLATFORM.id;
     }
 
     @Override
     public void addIntersectingBoundingBox(World world, int x, int y, int z, Box box, ArrayList boxes) {
-        Box var7 = this.getCollisionShape(world, x, y, z);
+        Box collisionBox = this.getCollisionShape(world, x, y, z);
 
-        if (var7 != null && box.intersects(var7)) {
+        if (collisionBox != null && box.intersects(collisionBox)) {
             if (ZastavkaHelper.collisionEntity instanceof MonsterEntity) {
-                boxes.add(var7);
+                boxes.add(collisionBox);
             }
         }
     }

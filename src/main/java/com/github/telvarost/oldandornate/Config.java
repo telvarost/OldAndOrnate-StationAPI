@@ -77,6 +77,13 @@ public class Config {
                 multiplayerSynced = true
         )
         public Boolean enableDungeonPlatformRecipe = true;
+
+        @ConfigEntry(
+                name = "Enable Skylands Dungeon Generation",
+                description = "Unique skyland bipyramid creeper dungeons",
+                multiplayerSynced = true
+        )
+        public Boolean enableSkylandsDungeonGeneration = true;
     }
 
     public static class StarFlowerConfig {
@@ -93,6 +100,13 @@ public class Config {
                 multiplayerSynced = true
         )
         public Boolean enableStarFlowerDyeRecipe = true;
+
+        @ConfigEntry(
+                name = "Skylands Star Flower Terrain Generation",
+                description = "Allows star flower generation in the skylands",
+                multiplayerSynced = true
+        )
+        public Boolean enableSkylandsStarFlowerGeneration = true;
 
         @ConfigEntry(
                 name = "Star Flower Terrain Generation",
