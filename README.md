@@ -44,9 +44,11 @@ Adds dungeon platform block and recipe
   * Craft 2 obsidian with 2 soul sand to get 4 dungeon platforms (recipe enabled by default)
     * Recipe is a square and blocks must be diagonal from each other
 * Special config to generate unique bipyramid creeper dungeons in the sky dimension (default enabled)
+  * Requires some form of Skylands Portal mod to get to the sky dimension
+    * Used in testing: https://github.com/ItsElix99/Skylands-Portal
   * Compatible with Elemental Creepers mod and Music Discs mod (both assist in creating greater dungeon variety)
     * Use Elemental Creeper's config to limit their natural spawn to account for the extra spawn from sky dungeons
-    * Most recent version of Music Discs mod is needed from: https://github.com/telvarost/b1.7.3-MusicDiscs/releases
+    * Music Discs mod must be updated version: https://github.com/telvarost/b1.7.3-MusicDiscs/releases
   * NOTE: TNT in these dungeons is set to explode when punched, so be careful! (spawns rarely)
 
 ### Star Flower Features
