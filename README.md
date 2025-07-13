@@ -2,9 +2,7 @@
 
 A StationAPI mod for Minecraft Beta 1.7.3 that adds in a few small old features and other random ornate addons.
 - Requires [Zastavka API](https://modrinth.com/mod/zastavkaapi) (used to freeze/chill enemies when hit with the Lapis Lazuli Sword)
-
-# Old and Ornate
-Mod now works on Multiplayer with GlassConfigAPI version 3.0+ used to sync configs!
+- Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
 
 ### Adobe Features
 Adds adobe blocks, recipes, and terrain generation (ported from mod archive and enhanced with configs)
@@ -37,18 +35,20 @@ Adds adobe blocks, recipes, and terrain generation (ported from mod archive and 
 Adds dungeon platform block and recipe
 * Dungeon Platform
   * Platform that falls when touched by a player and regenerates
-    * When touched by a player the dungeon platform becomes a faltering platform that falls after 6 seconds
-    * After the faltering platform falls it becomes a ghost platform that players will fall through but monsters can walk on
+    * When touched by a player the dungeon platform becomes a faltering platform
+      * Faltering platforms fall after 6 seconds
       * Faltering platforms do not produce blocks when they land
-    * The ghost platform turns back into a dungeon platform after 6 seconds
+    * After the faltering platform falls it becomes a ghost platform
+      * Ghost platforms turn back into dungeon platforms after 6 seconds
+      * Monsters can walk on ghost platforms but players cannot
   * Craft 2 obsidian with 2 soul sand to get 4 dungeon platforms (recipe enabled by default)
     * Recipe is a square and blocks must be diagonal from each other
 * Special config to generate unique bipyramid creeper dungeons in the sky dimension (default enabled)
   * Requires some form of Skylands Portal mod to get to the sky dimension
     * Used in testing: https://github.com/ItsElix99/Skylands-Portal
-  * Compatible with Elemental Creepers mod and Music Discs mod (both assist in creating greater dungeon variety)
-    * Use Elemental Creeper's config to limit their natural spawn to account for the extra spawn from sky dungeons
-    * Music Discs mod must be updated version: https://github.com/telvarost/b1.7.3-MusicDiscs/releases
+  * Compatible with Elemental Creepers mod and updated Music Discs mod
+    * Use Elemental Creeper's config to limit natural spawning to balance spawns in sky dungeons
+    * Find updated Music Discs mod here: https://github.com/telvarost/b1.7.3-MusicDiscs/releases
   * NOTE: TNT in these dungeons is set to explode when punched, so be careful! (spawns rarely)
 
 ### Star Flower Features
