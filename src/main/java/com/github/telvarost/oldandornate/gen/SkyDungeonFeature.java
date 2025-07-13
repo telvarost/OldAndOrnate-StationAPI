@@ -25,7 +25,6 @@ public class SkyDungeonFeature extends Feature {
 
     @Override
     public boolean generate(World world, Random random, int x, int y, int z) {
-        System.out.println("Coords: " + x + ", " + y + ", " + z);
         int yAdjusted = y + 7;
         hasDungeonMap = false;
 
