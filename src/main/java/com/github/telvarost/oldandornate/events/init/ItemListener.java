@@ -1,6 +1,6 @@
 package com.github.telvarost.oldandornate.events.init;
 
-import com.github.telvarost.oldandornate.ModHelper;
+import com.github.telvarost.oldandornate.OldAndOrnate;
 import com.github.telvarost.oldandornate.item.AdobeBrick;
 import com.github.telvarost.oldandornate.item.LapisLazuliSword;
 import net.mine_diver.unsafeevents.listener.EventListener;
@@ -16,8 +16,8 @@ public class ItemListener {
 
     @EventListener
     public void registerItems(ItemRegistryEvent event) {
-        ADOBE_BRICK = new AdobeBrick(ModHelper.NAMESPACE.id("adobe_brick")).setTranslationKey(ModHelper.NAMESPACE, "adobe_brick");
-        LAPIS_LAZULI_SWORD = new LapisLazuliSword(ModHelper.NAMESPACE.id("lapis_lazuli_sword"), ToolMaterial.WOOD).setTranslationKey(ModHelper.NAMESPACE, "lapis_lazuli_sword");
+        ADOBE_BRICK = new AdobeBrick(OldAndOrnate.OLD_AND_ORNATE.id("adobe_brick")).setTranslationKey(OldAndOrnate.OLD_AND_ORNATE, "adobe_brick");
+        LAPIS_LAZULI_SWORD = new LapisLazuliSword(OldAndOrnate.OLD_AND_ORNATE.id("lapis_lazuli_sword"), ToolMaterial.WOOD).setTranslationKey(OldAndOrnate.OLD_AND_ORNATE, "lapis_lazuli_sword");
 
         items = new Item[]
         { ADOBE_BRICK

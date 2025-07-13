@@ -8,13 +8,13 @@
     "FallingBlockEntityMixin",
     "MinecartEntityMixin",
     "OverworldChunkGeneratorMixin",
-    "PlantBlockMixin"
+    "PlantBlockMixin",
+    "SkyChunkGeneratorMixin"
   ],
   "server": [
   ],
   "client": [
     "client.SoundHelperAccessor",
-    "client.SoundHelperMixin",
     "client.WorldRendererMixin"
   ],
   "injectors": {
