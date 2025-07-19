@@ -58,7 +58,7 @@ public class GhostPlatform extends TemplateBlockWithEntity {
 
     @Override
     public int getDroppedItemId(int blockMeta, Random random) {
-        return DUNGEON_PLATFORM.id;
+        return DUNGEON_PLATFORM.asItem().id;
     }
 
     @Override
